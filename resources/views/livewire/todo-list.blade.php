@@ -30,6 +30,9 @@
         </header>
     </div>
 </div>
+@if(session('error'))
+<span class="text-white rounded bg-red-500 p-3 fixed top-10 right-10">{{session('error')}}</span>
+@endif
 @if(session('success'))
 <span class="text-white rounded bg-green-500 p-3 fixed top-10 right-10">{{session('success')}}</span>
 @endif
